@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>180113017</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Chilanka|Cute+Font|Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="SHORTCUT ICON" href="img/3_Ayy_icon.ico">
+</head>
+<body>
+	<section id="top-container">
+		<header>
+			<nav>
+				<div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+				<div class="logo">
+                    PRACTICE
+                </div>
+				<div class="menu">
+                    <ul>
+                        <li><a href="#top-container">Home</a></li>
+                        <li><a href="#mid-container">About</a></li>
+                        <li><a href="https://sdu.edu.kz/" target="_blank">SDU</a></li>
+                        <li><a href="#bot-container">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+		</header>
+		<h1>
+			I'm Adil
+		</h1>
+		<h2>
+			a
+			<span class="sdu">SDU</span>dent
+		</h2>
+		<h3>
+			web-programmer in near future
+		</h3>
+		<img src="img/3.png" style="width: 200px">
+	</section>
+	<section id="mid-container">
+		<div class="hello hideable" id="hello">
+			<img src="img/4.png" class="floating-banner" style="width: 266px">
+			<img id="cell" src="img/4.png" style="width: 166px">
+
+			<img id="cell2" src="img/4.png" style="width: 166px">
+			<h2>Hi.</h2>
+			<p class="intro">
+				My name is Adil Kenzhebulatov. I am studying in SDU. Also I really like programming.
+			</p>
+		</div>
+		<hr class="hideable">
+		<div class="interests hideable2">
+			<h2>My hobbies</h2>
+			<div class="a-description">
+				<img src="img/5.png" alt="coding" class="interest-icon" style="width:156px; float: right; margin-left: 30px">
+				<h3>Coding</h3>
+				<p>
+					I started learning programming languages and web development when I went to university. It's fun, especcialy when I'm doing well in solving problems.
+				</p>
+			</div>
+			<div class="a-description">
+				<img src="img/6.png" alt="music" class="interest-icon" style="width: 256px; float: left; margin-right: 30px;">
+				<h3>Singing and music</h3>
+				<p>
+					I like singing and listening music. When I was a kid, I used to learn playing on some instruments. I can play on guitar, and my favourite genre is chillpop.
+				</p>
+			</div>
+		</div>
+		<hr class = "hideable2">
+		<div class="contact hideable3">
+			<h2 style="color: #3b064d;">Can I help you?</h2>
+			<h3 style="margin-top: 30px; margin-bottom: 30px"> I will glad to solve some coding problems together, if I am required. </h3>
+			<p>If you have some problems, or just want to chat <br>- I don't really mind though -<br> just write me.</p>
+			<a href="mailto:180113017@stu.sdu.edu.kz" class="btn">
+				<img src="img/7.png" style="width: 25px; margin-right: 5px">
+				MESSAGE ME
+			</a>
+		</div>
+	</section>
+	<section id="bot-container">
+		<div class="link">
+			<a href="https://vk.com/lxi00" target="_blank" style="
+	color: #202040;">VK</a>
+			<a href="https://moodle.sdu.edu.kz/user/view.php?id=5630&course=2637" target="_blank" style="
+	color: #202040;">Moodle</a>
+		</div>
+		<div class="phone">
+			<img src="img/8.png" style="width: 26px">
+			<a href="tel:+7702-367-51-41">+7(702)367-51-41</a>
+		</div>
+		<div class="copyright">
+			<p>©2019 Adil Kenzhebulatov. All rights reserved.</p>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		 $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+                  $('.logo').addClass("white");
+            }
+
+            else {
+                  $('nav').removeClass('black');
+                  $('.logo').removeClass("white");
+            }
+      })
+	</script>
+</body>
+</html>
